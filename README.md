@@ -1,6 +1,6 @@
 # LexoRank
 
-[![NuGet](https://img.shields.io/nuget/v/LexoRank.svg)](https://www.nuget.org/packages/Innoloft.LexoRank/)
+[![NuGet](https://img.shields.io/nuget/v/Innoloft.LexoRank.svg)](https://www.nuget.org/packages/Innoloft.LexoRank/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/)
 
