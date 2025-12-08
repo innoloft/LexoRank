@@ -8,6 +8,10 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: 'LexoRank/'
     
     steps:
       - name: Checkout code
@@ -19,13 +23,13 @@ jobs:
           dotnet-version: '9.0.x'
       
       - name: Restore dependencies
-        run: dotnet restore LexoRank.sln
+        run: dotnet restore
       
       - name: Build project
-        run: dotnet build LexoRank.sln --configuration Release --no-restore
+        run: dotnet build --configuration Release --no-restore
       
       - name: Run tests
-        run: dotnet test LexoRank.sln --configuration Release --no-build --verbosity normal
+        run: dotnet test --configuration Release --no-build --verbosity normal
       
       - name: Pack project
         run: dotnet pack LexoRank/LexoRank.csproj --configuration Release --no-build --output ./nupkg
