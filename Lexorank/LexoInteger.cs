@@ -213,7 +213,7 @@ public class LexoInteger : IComparable<LexoInteger>, IComparable
 
         var nmag = new int[digits];
 
-        Array.Fill(nmag, sys.GetBase() - 1);
+        for (var i = 0; i < nmag.Length; i++) nmag[i] = sys.GetBase() - 1;
 
         for (var i = 0; i < mag.Length; ++i) nmag[i] = sys.GetBase() - 1 - mag[i];
 

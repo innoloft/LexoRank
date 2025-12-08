@@ -457,8 +457,8 @@ public class LexoRank: IComparable<LexoRank>, IComparable
     /// <exception cref="LexoException">Thrown if the calculated rank is invalid or if inputs are invalid.</exception>
     public static LexoRank CalculateBetween(string? prevStr, string? nextStr)
     {
-        LexoRank? prev = string.IsNullOrEmpty(prevStr) ? null : Parse(prevStr);
-        LexoRank? next = string.IsNullOrEmpty(nextStr) ? null : Parse(nextStr);
+        LexoRank? prev = string.IsNullOrEmpty(prevStr) ? null : Parse(prevStr!);
+        LexoRank? next = string.IsNullOrEmpty(nextStr) ? null : Parse(nextStr!);
 
         if (prev == null && next == null)
         {
