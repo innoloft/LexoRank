@@ -2,7 +2,7 @@
 
 [![NuGet](https://img.shields.io/nuget/v/Innoloft.LexoRank.svg)](https://www.nuget.org/packages/Innoloft.LexoRank/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![.NET](https://img.shields.io/badge/.NET-9.0-blue.svg)](https://dotnet.microsoft.com/)
+[![.NET](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/)
 
 A .NET implementation of the Atlassian LexoRank algorithm. LexoRank is a ranking system that allows for efficient reordering of items in a list without requiring updates to other items.
 
